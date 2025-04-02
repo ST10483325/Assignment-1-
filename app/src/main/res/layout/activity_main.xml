@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3003A9F4"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroupSize"
+        android:layout_width="275dp"
+        android:layout_height="247dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="69dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtResults"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdMorning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Morning" />
+
+        <RadioButton
+            android:id="@+id/rdMidmorning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mid-morning" />
+
+        <RadioButton
+            android:id="@+id/rdAfternoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Afternoon" />
+
+        <RadioButton
+            android:id="@+id/rdMidAfternoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mid-Afternoon" />
+
+        <RadioButton
+            android:id="@+id/rdDinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dinner" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/TxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="44dp"
+        android:hyphenationFrequency="normal"
+        android:text="Food Ideas"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupSize"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="32dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResults"
+        android:layout_width="151dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="112dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnReset"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="40dp"
+        android:text="Compute"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnReset" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
